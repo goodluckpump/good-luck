@@ -4,154 +4,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080b08">
-  <meta name="description" content="GOOD LUCK. Something is coming. Follow the journey. The big reveal is December 31, 2026.">
-  <title>GOOD LUCK — Something Is Coming</title>
+  <meta name="theme-color" content="#071109">
+  <meta name="description" content="GOOD LUCK. Something special is coming. Stay curious. Stay lucky.">
+  <title>GOOD LUCK 🍀 — Something Is Coming</title>
+
   <style>
-    * { box-sizing: border-box; }
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #f5f7f2;
-      background: #080b08;
-      text-align: center;
+      padding: 0;
     }
-    .hero {
+
+    body {
       min-height: 100vh;
-      padding: 28px 20px 60px;
+      background:
+        radial-gradient(ellipse at top, #173b20 0%, #071109 55%, #020503 100%);
+      color: #f4fff2;
+      font-family: Arial, Helvetica, sans-serif;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      background:
-        radial-gradient(ellipse at 50% 35%, #18351a 0%, #0b130b 38%, #080b08 75%);
+      text-align: center;
+      padding: 30px 18px;
     }
-    .logo {
-      color: #b7ff69;
-      font-size: 18px;
-      font-weight: 900;
-      letter-spacing: 5px;
-      margin-bottom: 65px;
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      padding: 55px 15px;
     }
+
     .clover {
       font-size: 76px;
-      filter: drop-shadow(0 0 25px #78ff4d);
-      margin-bottom: 24px;
+      margin-bottom: 18px;
+      filter: drop-shadow(0 0 22px rgba(80, 255, 100, 0.3));
     }
+
     h1 {
-      font-size: clamp(40px, 9vw, 82px);
-      line-height: 1.05;
-      letter-spacing: -3px;
-      margin: 0;
+      color: #8cff8c;
+      font-size: clamp(58px, 12vw, 112px);
       font-weight: 900;
+      letter-spacing: clamp(2px, 1vw, 8px);
+      line-height: 1.05;
+      text-align: center;
+      text-shadow: 0 0 35px rgba(80, 255, 100, 0.22);
+      overflow-wrap: anywhere;
+      margin-bottom: 25px;
     }
-    h1 span { color: #b7ff69; }
-    .intro {
-      max-width: 550px;
-      margin: 25px auto;
-      color: #c0c9bc;
+
+    .headline {
+      font-size: clamp(18px, 3vw, 27px);
+      font-weight: 800;
+      letter-spacing: 3px;
+      margin-bottom: 22px;
+    }
+
+    .description {
+      color: #c5d8c6;
       font-size: 18px;
-      line-height: 1.7;
+      line-height: 1.8;
+      max-width: 620px;
+      margin: 0 auto 30px;
     }
-    .tag {
-      color: #b7ff69;
-      font-size: 12px;
-      letter-spacing: 3px;
+
+    .tagline {
+      color: #8cff8c;
+      font-size: 15px;
       font-weight: bold;
-      margin: 20px 0;
+      letter-spacing: 4px;
+      margin-bottom: 35px;
     }
+
     .date {
-      margin-top: 38px;
-      padding: 22px 32px;
-      border: 1px solid #42633b;
-      border-radius: 14px;
-      background: #101910;
+      display: inline-block;
+      border: 1px solid #397a43;
+      border-radius: 12px;
+      padding: 16px 25px;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 32px;
+      background: rgba(15, 45, 20, 0.55);
     }
-    .date small {
-      display: block;
-      color: #9fa99b;
-      letter-spacing: 3px;
-      margin-bottom: 12px;
-    }
-    .date strong {
-      color: #b7ff69;
-      font-size: 24px;
-    }
+
     .buttons {
       display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
       justify-content: center;
-      margin-top: 30px;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 35px;
     }
-    .btn {
+
+    .button {
       display: inline-block;
+      min-width: 150px;
+      padding: 15px 24px;
+      border-radius: 9px;
+      background: #8cff8c;
+      color: #071109;
       text-decoration: none;
-      color: #080b08;
-      background: #b7ff69;
-      padding: 14px 22px;
-      border-radius: 7px;
-      font-weight: bold;
+      font-weight: 800;
+      transition: transform 0.2s, background 0.2s;
     }
-    .btn.secondary {
+
+    .button:hover {
+      transform: translateY(-3px);
+      background: #b4ffb4;
+    }
+
+    .button.secondary {
       background: transparent;
-      color: #b7ff69;
-      border: 1px solid #42633b;
+      border: 1px solid #8cff8c;
+      color: #8cff8c;
     }
-    .note {
-      margin-top: 42px;
-      max-width: 470px;
-      color: #7e897a;
-      font-size: 12px;
-      line-height: 1.7;
-    }
+
     footer {
-      padding: 22px;
-      color: #6e786b;
+      color: #809181;
       font-size: 12px;
-      border-top: 1px solid #202820;
+      line-height: 1.8;
+      margin-top: 25px;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 35px 5px;
+      }
+
+      .clover {
+        font-size: 60px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+
+      .tagline {
+        letter-spacing: 2px;
+      }
+
+      .date {
+        font-size: 15px;
+        padding: 14px 16px;
+      }
     }
   </style>
-  h1 {
-  font-size: 90px;
-  font-weight: 900;
-  letter-spacing: 5px;
-  text-align: center;
-}
 </head>
+
 <body>
-  <main class="hero">
-    <div class="logo">GOOD LUCK</div>
+  <main class="container">
     <div class="clover">🍀</div>
 
-    <h1>SOMETHING<br><span>IS COMING.</span></h1>
+    <h1>GOOD LUCK</h1>
 
-    <p class="intro">
-      A new journey begins soon.
-      A mystery is waiting to be revealed.
+    <p class="headline">SOMETHING IS COMING.</p>
+
+    <p class="description">
+      A new journey begins soon.<br>
+      A mystery is waiting to be revealed.<br>
       Are you ready?
     </p>
 
-    <div class="tag">STAY CURIOUS. STAY LUCKY.</div>
+    <p class="tagline">STAY CURIOUS. STAY LUCKY.</p>
 
-    <section class="date">
-      <small>THE BIG REVEAL</small>
-      <strong>DECEMBER 31, 2026</strong>
-    </section>
+    <div class="date">DECEMBER 31, 2026</div>
 
     <div class="buttons">
-      <a class="btn" href="https://x.com/" target="_blank" rel="noopener noreferrer">FOLLOW ON X</a>
-      <a class="btn secondary" href="https://t.me/" target="_blank" rel="noopener noreferrer">JOIN TELEGRAM</a>
+      <a class="button" href="https://x.com/" target="_blank" rel="noopener noreferrer">
+        FOLLOW ON X
+      </a>
+
+      <a class="button secondary" href="https://t.me/" target="_blank" rel="noopener noreferrer">
+        JOIN TELEGRAM
+      </a>
     </div>
 
-    <p class="note">
-      This is only the beginning. Follow our journey and stay tuned
-      for future announcements. Cryptocurrency is risky. No profits
-      or price increases are promised.
-    </p>
+    <footer>
+      GOOD LUCK · A mystery will be revealed.<br>
+      This website does not promise profits or price increases.<br>
+      © 2026 GOOD LUCK
+    </footer>
   </main>
-
-  <footer>© 2026 GOOD LUCK · THE JOURNEY STARTS SOON</footer>
 </body>
 </html>
-
