@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#071109">
-  <meta name="description" content="GOOD LUCK. Something special is coming. Stay curious. Stay lucky.">
+  <meta name="theme-color" content="#07110b">
+  <meta name="description" content="GOOD LUCK. Stay curious. Stay lucky. The big reveal is coming December 31, 2026.">
   <title>GOOD LUCK 🍀 — Something Is Coming</title>
 
   <style>
@@ -16,133 +17,129 @@
 
     body {
       min-height: 100vh;
-      background: radial-gradient(ellipse at top, #173b20 0%, #071109 55%, #020503 100%);
-      color: #f4fff2;
-      font-family: Arial, Helvetica, sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 30px 20px;
+      background: radial-gradient(ellipse at top, #163522 0%, #07110b 55%, #030704 100%);
+      color: #f4fff5;
+      font-family: Arial, Helvetica, sans-serif;
       text-align: center;
-      padding: 30px 18px;
     }
 
     .container {
       width: 100%;
-      max-width: 1000px;
-      padding: 55px 15px;
+      max-width: 760px;
+      padding: 55px 25px;
     }
 
     .clover {
       font-size: 76px;
-      margin-bottom: 18px;
-      filter: drop-shadow(0 0 22px rgba(80, 255, 100, 0.3));
+      margin-bottom: 24px;
+      filter: drop-shadow(0 0 20px rgba(82, 255, 126, 0.25));
     }
 
-    h1 {
-      color: #8cff8c;
-      font-size: clamp(58px, 12vw, 112px);
+    .brand {
+      color: #8cff9e;
+      font-size: clamp(42px, 10vw, 76px);
       font-weight: 900;
-      letter-spacing: clamp(2px, 1vw, 8px);
-      line-height: 1.05;
-      text-shadow: 0 0 35px rgba(80, 255, 100, 0.22);
-      overflow-wrap: anywhere;
+      letter-spacing: 7px;
       margin-bottom: 25px;
     }
 
     .headline {
-      font-size: clamp(18px, 3vw, 27px);
+      font-size: clamp(20px, 4vw, 29px);
       font-weight: 800;
       letter-spacing: 3px;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .description {
-      color: #c5d8c6;
-      font-size: 18px;
+      max-width: 540px;
+      margin: 0 auto 35px;
+      color: #b9cbbd;
+      font-size: 17px;
       line-height: 1.8;
-      max-width: 620px;
-      margin: 0 auto 30px;
     }
 
-    .tagline {
-      color: #8cff8c;
-      font-size: 15px;
-      font-weight: bold;
+    .date-label {
+      color: #8cff9e;
+      font-size: 13px;
+      font-weight: 700;
       letter-spacing: 4px;
-      margin-bottom: 35px;
+      margin-bottom: 12px;
     }
 
     .date {
-      display: inline-block;
-      border: 1px solid #397a43;
-      border-radius: 12px;
-      padding: 16px 25px;
-      color: #ffffff;
-      font-size: 18px;
-      font-weight: bold;
+      font-size: clamp(23px, 5vw, 34px);
+      font-weight: 800;
       letter-spacing: 2px;
-      margin-bottom: 32px;
-      background: rgba(15, 45, 20, 0.55);
+      margin-bottom: 38px;
     }
 
     .buttons {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 14px;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
 
     .button {
       display: inline-block;
-      min-width: 150px;
-      padding: 15px 24px;
-      border-radius: 9px;
-      background: #8cff8c;
-      color: #071109;
+      min-width: 175px;
+      padding: 16px 22px;
+      border: 1px solid #8cff9e;
+      border-radius: 8px;
+      background: #8cff9e;
+      color: #07110b;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
       text-decoration: none;
-      font-weight: 800;
-      transition: transform 0.2s, background 0.2s;
+      transition: 0.2s ease;
     }
 
     .button:hover {
       transform: translateY(-3px);
-      background: #b4ffb4;
+      background: #b6ffc0;
+      box-shadow: 0 8px 25px rgba(140, 255, 158, 0.18);
     }
 
     .button.secondary {
       background: transparent;
-      border: 1px solid #8cff8c;
-      color: #8cff8c;
+      color: #8cff9e;
     }
 
-    footer {
-      color: #809181;
-      font-size: 12px;
+    .button.secondary:hover {
+      background: rgba(140, 255, 158, 0.1);
+    }
+
+    .footer {
+      margin-top: 42px;
+      color: #6f8775;
+      font-size: 11px;
+      letter-spacing: 2px;
       line-height: 1.8;
-      margin-top: 25px;
     }
 
     @media (max-width: 480px) {
       .container {
-        padding: 35px 5px;
+        padding: 35px 10px;
       }
 
-      .clover {
-        font-size: 60px;
+      .brand {
+        letter-spacing: 4px;
       }
 
-      .description {
-        font-size: 16px;
+      .buttons {
+        flex-direction: column;
+        align-items: center;
       }
 
-      .tagline {
-        letter-spacing: 2px;
-      }
-
-      .date {
-        font-size: 15px;
-        padding: 14px 16px;
+      .button {
+        width: 100%;
+        max-width: 280px;
       }
     }
   </style>
@@ -150,42 +147,45 @@
 
 <body>
   <main class="container">
-
     <div class="clover">🍀</div>
 
-    <h1>GOOD LUCK</h1>
+    <h1 class="brand">GOOD LUCK</h1>
 
-    <p class="headline">SOMETHING IS COMING.</p>
+    <h2 class="headline">SOMETHING IS COMING.</h2>
 
     <p class="description">
-      A new journey begins soon.<br>
-      A mystery is waiting to be revealed.<br>
-      Are you ready?
+      A new journey is about to begin.
+      Stay curious. Stay connected.
+      The biggest surprise is yet to come.
     </p>
 
-    <p class="tagline">STAY CURIOUS. STAY LUCKY.</p>
-
-    <div class="date">DECEMBER 31, 2026</div>
+    <p class="date-label">SAVE THE DATE</p>
+    <p class="date">DECEMBER 31, 2026</p>
 
     <div class="buttons">
-      <a class="button" href="https://x.com/" target="_blank" rel="noopener noreferrer">
-        FOLLOW ON X
-      </a>
+      <a
+        class="button"
+        href="https://x.com/goodluckpump"
+        target="_blank"
+        rel="noopener noreferrer"
+      >FOLLOW ON X</a>
 
-      <a class="button secondary" href="https://t.me/" target="_blank" rel="noopener noreferrer">
-        JOIN TELEGRAM
-      </a>
+      <a
+        class="button secondary"
+        href="https://t.me/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >JOIN TELEGRAM</a>
 
-      <a class="button" href="launch.html">
+      <a class="button secondary" href="launch.html">
         DISCOVER THE SURPRISE 🍀
       </a>
     </div>
 
-    <footer>
-      GOOD LUCK · A mystery will be revealed.<br><br>
-      © 2026 GOOD LUCK
+    <footer class="footer">
+      GOOD LUCK © 2026<br>
+      STAY CURIOUS. STAY LUCKY.
     </footer>
-
   </main>
 </body>
 </html>
