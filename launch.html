@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#071109">
-  <meta name="description" content="GOOD LUCK — A new memecoin is coming. A special surprise will be revealed on December 31, 2026.">
+  <meta name="theme-color" content="#07110b">
+  <meta name="description" content="GOOD LUCK — A new memecoin is coming. The big reveal is December 31, 2026.">
   <title>GOOD LUCK 🍀 — The Big Surprise</title>
 
   <style>
@@ -16,157 +17,181 @@
 
     body {
       min-height: 100vh;
-      background: radial-gradient(ellipse at top, #173b20 0%, #071109 55%, #020503 100%);
-      color: #f4fff2;
-      font-family: Arial, Helvetica, sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 30px 20px;
+      background: radial-gradient(ellipse at top, #163522 0%, #07110b 55%, #030704 100%);
+      color: #f4fff5;
+      font-family: Arial, Helvetica, sans-serif;
       text-align: center;
-      padding: 30px 18px;
     }
 
     .container {
       width: 100%;
-      max-width: 900px;
-      padding: 50px 15px;
+      max-width: 800px;
+      padding: 50px 25px;
     }
 
     .clover {
-      font-size: 80px;
-      margin-bottom: 20px;
-      filter: drop-shadow(0 0 22px rgba(80, 255, 100, 0.3));
+      font-size: 72px;
+      margin-bottom: 22px;
+      filter: drop-shadow(0 0 20px rgba(82, 255, 126, 0.25));
     }
 
-    h1 {
-      color: #8cff8c;
-      font-size: clamp(52px, 11vw, 100px);
+    .brand {
+      color: #8cff9e;
+      font-size: clamp(40px, 9vw, 70px);
       font-weight: 900;
-      letter-spacing: clamp(2px, 1vw, 8px);
-      line-height: 1.1;
-      text-shadow: 0 0 35px rgba(80, 255, 100, 0.22);
-      overflow-wrap: anywhere;
-      margin-bottom: 28px;
+      letter-spacing: 6px;
+      margin-bottom: 30px;
     }
 
     .headline {
-      font-size: clamp(20px, 4vw, 32px);
-      font-weight: 800;
+      font-size: clamp(23px, 5vw, 38px);
+      line-height: 1.3;
+      font-weight: 900;
       letter-spacing: 2px;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
     }
 
     .description {
-      color: #c5d8c6;
-      font-size: 18px;
-      line-height: 1.9;
-      max-width: 650px;
-      margin: 0 auto 30px;
-    }
-
-    .surprise {
-      margin: 35px auto;
-      padding: 28px 20px;
-      max-width: 650px;
-      border: 1px solid #397a43;
-      border-radius: 16px;
-      background: rgba(15, 45, 20, 0.55);
-      box-shadow: 0 0 35px rgba(80, 255, 100, 0.08);
-    }
-
-    .surprise h2 {
-      color: #8cff8c;
-      font-size: clamp(25px, 5vw, 38px);
-      margin-bottom: 15px;
-      letter-spacing: 2px;
-    }
-
-    .surprise p {
-      color: #d4e5d5;
+      max-width: 590px;
+      margin: 0 auto 35px;
+      color: #b9cbbd;
       font-size: 17px;
-      line-height: 1.8;
+      line-height: 1.9;
+    }
+
+    .surprise-box {
+      margin: 35px auto;
+      padding: 30px 24px;
+      max-width: 590px;
+      border: 1px solid rgba(140, 255, 158, 0.35);
+      border-radius: 14px;
+      background: rgba(140, 255, 158, 0.04);
+      box-shadow: 0 0 35px rgba(140, 255, 158, 0.04);
+    }
+
+    .surprise-title {
+      margin-bottom: 18px;
+      color: #8cff9e;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 4px;
+    }
+
+    .surprise-text {
+      color: #d4e5d7;
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    .date-label {
+      color: #8cff9e;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      margin-top: 38px;
+      margin-bottom: 13px;
     }
 
     .date {
-      display: inline-block;
-      border: 1px solid #397a43;
-      border-radius: 12px;
-      padding: 16px 25px;
-      color: #ffffff;
-      font-size: 18px;
-      font-weight: bold;
+      font-size: clamp(23px, 5vw, 34px);
+      font-weight: 900;
       letter-spacing: 2px;
-      margin: 15px 0 32px;
-      background: rgba(15, 45, 20, 0.55);
+      margin-bottom: 35px;
     }
 
     .buttons {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 14px;
-      margin-bottom: 30px;
+      margin: 30px 0;
     }
 
     .button {
       display: inline-block;
-      min-width: 160px;
-      padding: 15px 24px;
-      border-radius: 9px;
-      background: #8cff8c;
-      color: #071109;
+      min-width: 175px;
+      padding: 16px 22px;
+      border: 1px solid #8cff9e;
+      border-radius: 8px;
+      background: #8cff9e;
+      color: #07110b;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
       text-decoration: none;
-      font-weight: 800;
-      transition: transform 0.2s, background 0.2s;
+      transition: 0.2s ease;
     }
 
     .button:hover {
       transform: translateY(-3px);
-      background: #b4ffb4;
+      background: #b6ffc0;
+      box-shadow: 0 8px 25px rgba(140, 255, 158, 0.18);
     }
 
     .button.secondary {
       background: transparent;
-      border: 1px solid #8cff8c;
-      color: #8cff8c;
+      color: #8cff9e;
+    }
+
+    .button.secondary:hover {
+      background: rgba(140, 255, 158, 0.1);
     }
 
     .back-link {
       display: inline-block;
-      margin-top: 10px;
-      color: #8cff8c;
+      margin-top: 12px;
+      color: #a8c4ad;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
       text-decoration: none;
-      font-size: 15px;
     }
 
     .back-link:hover {
-      text-decoration: underline;
+      color: #8cff9e;
     }
 
-    footer {
-      color: #809181;
-      font-size: 12px;
+    .disclaimer {
+      max-width: 590px;
+      margin: 35px auto 0;
+      color: #718777;
+      font-size: 11px;
       line-height: 1.8;
+    }
+
+    .footer {
       margin-top: 35px;
+      color: #6f8775;
+      font-size: 11px;
+      letter-spacing: 2px;
+      line-height: 1.8;
     }
 
     @media (max-width: 480px) {
       .container {
-        padding: 35px 5px;
+        padding: 30px 10px;
       }
 
-      .clover {
-        font-size: 65px;
+      .brand {
+        letter-spacing: 3px;
       }
 
-      .description,
-      .surprise p {
-        font-size: 16px;
+      .buttons {
+        flex-direction: column;
+        align-items: center;
       }
 
-      .date {
-        font-size: 15px;
-        padding: 14px 16px;
+      .button {
+        width: 100%;
+        max-width: 280px;
+      }
+
+      .surprise-box {
+        padding: 25px 18px;
       }
     }
   </style>
@@ -174,48 +199,59 @@
 
 <body>
   <main class="container">
-
     <div class="clover">🍀</div>
 
-    <h1>GOOD LUCK</h1>
+    <h1 class="brand">GOOD LUCK</h1>
 
-    <p class="headline">A NEW MEMECOIN IS COMING.</p>
+    <h2 class="headline">A NEW MEMECOIN IS COMING.</h2>
 
     <p class="description">
-      Something new is on the way.<br>
-      A new journey. A new community.<br>
+      Something new is on the way.
+      A new journey. A new community.
       But that's only the beginning...
     </p>
 
-    <section class="surprise">
-      <h2>THE BIG SURPRISE</h2>
-      <p>
-        Something special is being prepared.<br>
-        The full reveal is coming at the end of the year.<br>
+    <section class="surprise-box">
+      <h3 class="surprise-title">THE BIG SURPRISE 🍀</h3>
+
+      <p class="surprise-text">
+        Something special is being prepared.
+        The full reveal is coming at the end of the year.
         Stay curious. Stay tuned. Stay lucky.
       </p>
     </section>
 
-    <div class="date">DECEMBER 31, 2026</div>
+    <p class="date-label">THE REVEAL</p>
+    <p class="date">DECEMBER 31, 2026</p>
 
     <div class="buttons">
-      <a class="button" href="https://x.com/" target="_blank" rel="noopener noreferrer">
-        FOLLOW ON X
-      </a>
+      <a
+        class="button"
+        href="https://x.com/goodluckpump"
+        target="_blank"
+        rel="noopener noreferrer"
+      >FOLLOW ON X</a>
 
-      <a class="button secondary" href="https://t.me/" target="_blank" rel="noopener noreferrer">
-        JOIN TELEGRAM
-      </a>
+      <a
+        class="button secondary"
+        href="https://t.me/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >JOIN TELEGRAM</a>
     </div>
 
     <a class="back-link" href="index.html">← BACK TO HOME</a>
 
-    <footer>
-      GOOD LUCK · The surprise will be revealed on December 31, 2026.<br>
-      Memecoins are risky. This page does not promise profits or price increases.<br><br>
-      © 2026 GOOD LUCK
-    </footer>
+    <p class="disclaimer">
+      Memecoins are highly speculative and can lose their entire value.
+      Nothing on this website guarantees profits or price increases.
+      Always do your own research.
+    </p>
 
+    <footer class="footer">
+      GOOD LUCK © 2026<br>
+      STAY CURIOUS. STAY LUCKY.
+    </footer>
   </main>
 </body>
 </html>
